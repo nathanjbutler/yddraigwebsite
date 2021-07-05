@@ -1,108 +1,34 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+/* Header is the container, inside of this is the logo and the navbar */
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
-
-body{
-font-family: sans-serif;
+.logo{
+    width: 15%;
+    height: auto;
 }
-
-nav{
-    background:white;
-    padding: 5px 20px;
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    flex-grow: 2;
+    list-style: none;
 }
-
-ul{
-list-style-type: none;
-
+.navlink{
+    padding: 20px
 }
-
-a{
-    color: white;
+.navlink a {
+    color: #950a0a;
     text-decoration: none;
+    font-size: 1.5em;
 }
 
-a:hover{
-    text-decoration: underline;
-    transition-delay: 3s;
-}
-
-.menu li{
-font-size: 16px;
-padding: 15px 5px;
-}
-
-.menu li a{
-    display: block;
-}
-
-.logo a{
-    font-size: 20px;
-
-}
-/* Mobile Menu */
-.menu{
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
-align-items: center;
-}
-
-.toggle{
-    color: white;
-    order: 1;
-}
-
-.item{
-    width: 100%;
-    text-align: center;
-    order: 3;
+/* Hamburger Menu Hidden*/
+.burger {
+    font-size: 1.2em;
     display: none;
 }
 
-.item.active{
-    display: block;
-}
-
-.toggle{
-cursor: pointer;
-}
-
-
-
-
-/*tablet menu*/
-@media all and (min-width: 468px){
-    .menu{
-        justify-content: center;
-    }
-    .logo{
-        flex:1;
-    }
-    .toggle{
-        order:1;
-    }
-    
-}
-
-@media all and (min-width: 768px){
-    .item{
-        display: block;
-        width: auto;
-    }
-    .toggle{
-        display: none;
-    }
-    .logo{
-        order: 0;
-    }
-    .item{
-        order: 1;
-    }
-    .menu li{
-        padding: 15px 10px;   
-    }
-    
-
-}
