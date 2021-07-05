@@ -5,10 +5,11 @@ header{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    height: 100%;
 }
 .logo{
-    width: 15%;
-    height: auto;
+    width: auto;
+    height: 25%;
 }
 .nav {
     display: flex;
