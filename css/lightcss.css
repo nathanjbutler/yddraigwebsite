@@ -30,7 +30,36 @@ header{
 
 /* Hamburger Menu Hidden*/
 .burger {
-    font-size: 1.2em;
+    font-size: 1.7em;
     display: none;
+
 }
 
+@media screen and (max-width: 768px) {
+    .header{
+        position: fixed;
+    }
+    .burger {
+        display: block;
+        /* padding: 20px;    */
+    }
+    .nav {
+        margin: 0;
+        background: white;
+        position: fixed;
+        right: -100%;
+        top: 70px;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0;
+        transition: all 400ms;
+    }
+    .navlink {
+        text-align: center;
+    }
+    .nav.active {
+        right: 0;
+    }
+}
