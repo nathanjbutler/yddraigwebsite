@@ -6,6 +6,7 @@ header{
     justify-content: space-between;
     align-items: center;
     height: 10vh;
+    margin: 0;
 }
 .logo{
     width: auto;
@@ -30,18 +31,20 @@ header{
 
 /* Hamburger Menu Hidden*/
 .burger {
-    font-size: 1.7em;
+    font-size: 2.2em;
     display: none;
 
 }
-
+/* This is so the hamburger menu shows up on smaller devices */
 @media screen and (max-width: 768px) {
     .header{
         position: fixed;
+        width: 100%;
+        
     }
     .burger {
         display: block;
-        /* padding: 20px;    */
+        padding-right: 30px;   
     }
     .nav {
         margin: 0;
