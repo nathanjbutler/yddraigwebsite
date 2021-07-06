@@ -29,15 +29,16 @@ header{
 .logo{
     width: auto;
     height: 70%;
-    margin-bottom: 20px;
 }
 .nav {
     display: flex;
     height: 100%;
     justify-content: flex-end;
+    align-items: center;
     flex-wrap: wrap;
     flex-grow: 2;
     list-style: none;
+
     
 }
 .navlink{
@@ -46,7 +47,7 @@ header{
 .navlink a {
     color: #950a0a;
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1.7em;
 }
 
 /* Hamburger Menu Hidden*/
@@ -79,11 +80,10 @@ header{
   }
 
 /* This is so the hamburger menu shows up on smaller devices */
-@media screen and (max-width: 968px) {
+@media screen and (max-width: 978px) {
     .header{
         position: fixed;
         width: 100vw;
-            
     }
     .burger {
         display: block;
@@ -101,6 +101,8 @@ header{
         justify-content: space-around;
         padding: 0;
         transition: all 400ms;
+        font-weight: bold;
+        font-size: large;
     }
     .hero-image{
         height: auto;
