@@ -25,6 +25,7 @@ header{
     height: 10vh;
     margin: 0;
     background-color: white;
+    position: fixed;
 }
 .logo{
     width: auto;
@@ -69,6 +70,8 @@ header{
     background-size: cover;
     background-repeat: no-repeat;
     flex-grow: 1;
+    position: relative;
+    top: 10vh;
     /* margin-bottom: 100px; */
     
 }
@@ -82,7 +85,7 @@ header{
 /* This is so the hamburger menu shows up on smaller devices */
 @media screen and (max-width: 978px) {
     .header{
-        position: fixed;
+        /* position: fixed; */
         width: 100vw;
     }
     .burger {
