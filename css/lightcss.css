@@ -80,24 +80,28 @@ header{
 /* Footer */
 
   /* FOOTER */
-footer{
+.footer{
     width: 100%;
-    height: 25vh;
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: center; */
-    /* align-items: center;     */
+    height: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;    
   }
-  .socialicons{
-      /* text-align: center; */
-      height: 10vh;
-      width: 100%;
-  }
-  .logofooter img{
-      height;
-    
-  }
-
+ footer img{
+     height: 5vh;
+     width: auto;
+     
+     
+ }
+ .socialicons i{
+    padding: 10px;
+ }
+.footertext{
+    text-align: center;
+}
   /* .socialicons i
   {
       padding-right: 20px;
@@ -160,7 +164,22 @@ footer{
     {
         margin: 0px;
     }
-
     
+    footer{
+        /* text-align: center; */
+    }
+.logofooter{
+order: 0;
+flex-grow: 0;
+
+}
+.socialicons{
+order: 1;
+}
+.footertext{
+order: 2;
+text-align: center;
+
+}
 }
 
