@@ -4,11 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- CSS only -->
-<link rel="stylesheet" type="text/css" href="css/lightcss.css">
+<link href="/css/lightcss.css" rel="stylesheet" id="theme-link">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="preload" as="style"/>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&family=Roboto&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/78512fb248.js" crossorigin="anonymous"></script>
-<body>
+<body class="dark-theme">
     
 <header class="header">
         <img src="img/YDdraigLogo.png" alt="Logo" class="logo">
@@ -20,7 +20,16 @@
             <li class="navlink"><a href="#">Gallery</a></li>
             <li class="navlink"><a href="#">Resources</a></li>
             <li class="navlink"><a href="#">Contact Us</a></li>
-            <i class="fas fa-shield-alt fa-2x"></i>
+            <button class="btn-toggle"><i class="fas fa-shield-alt fa-2x"></i></button>
+                <script>
+                    const btn = document.querySelector(".btn-toggle");
+
+                    btn.addEventListener("click", function () {
+                    document.body.classList.toggle("dark-theme");
+                    });
+
+                </script>
+
         </ul>
         <div class="burger">
             <i class="fa fa-bars"></i>
