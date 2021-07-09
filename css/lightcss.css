@@ -1,3 +1,4 @@
+/* Light Theme CSS */
 * {
     vertical-align: baseline;
     font-weight: inherit;
@@ -11,15 +12,14 @@
     box-sizing: border-box;
 }
 body {
-    background-color: white;
-    color: black;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+  } 
+  body.dark-theme {
+    color: #eee;
+    background: #121212;
   }
   
-.darkmode {
-    background-color: black;
-    color: white;
-  }
-
 /* Header is the container, inside of this is the logo and the navbar */
 header{
     display: flex;
@@ -29,7 +29,7 @@ header{
     align-items: center;
     height: 10vh;
     margin: 0;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     position: fixed;
     z-index: 1;
     width: 100%;
@@ -48,10 +48,11 @@ header{
 }
 nav, i{
     cursor: pointer;
+    color: #950a0a;
 }
 nav, i:hover
     {
-        color: #950a0a;
+        color: black;
         transition: 0.3s;
     }
 
@@ -63,6 +64,12 @@ nav, i:hover
     text-decoration: none;
     font-size: 1.7em;
 }
+
+body.dark-theme, header, nav{
+    background-color: #121212;
+}
+
+
 
 /* Hamburger Menu Hidden*/
 .burger {
@@ -84,15 +91,12 @@ nav, i:hover
     background-repeat: no-repeat;
     flex-grow: 1;
     position: relative;
-    top: 10vh;
-    
+    top: 10vh;  
 }
 .hero-image {
     height: 100vh;
     width: auto;  
   }
-
-/* Footer */
 
   /* FOOTER */
 .footer{
@@ -108,8 +112,6 @@ nav, i:hover
  footer img{
      height: 5vh;
      width: auto;
-     
-     
  }
  .socialicons i{
     padding: 10px;
@@ -130,15 +132,6 @@ nav, i:hover
       color: #950a0a;
       transition: 0.3s;
   }
-
-
-
-
-
-
-
-
-
 
 /* This is so the hamburger menu shows up on smaller devices */
 @media screen and (max-width: 978px) {
@@ -189,7 +182,6 @@ nav, i:hover
     .footertext{
     order: 2;
     text-align: center;
-
 }
 }
 
