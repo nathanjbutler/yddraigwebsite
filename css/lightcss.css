@@ -10,7 +10,15 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+body {
+    background-color: white;
+    color: black;
+  }
+  
+.darkmode {
+    background-color: black;
+    color: white;
+  }
 
 /* Header is the container, inside of this is the logo and the navbar */
 header{
@@ -36,10 +44,17 @@ header{
     align-items: center;
     flex-wrap: wrap;
     /* flex-grow: 2; */
-    list-style: none;
-
-    
+    list-style: none;    
 }
+nav, i{
+    cursor: pointer;
+}
+nav, i:hover
+    {
+        color: #950a0a;
+        transition: 0.3s;
+    }
+
 .navlink{
     padding: 20px
 }
@@ -164,21 +179,16 @@ header{
     {
         margin: 0px;
     }
-    
-    footer{
-        /* text-align: center; */
+    .logofooter{
+    order: 0;
+    flex-grow: 0;
     }
-.logofooter{
-order: 0;
-flex-grow: 0;
-
-}
-.socialicons{
-order: 1;
-}
-.footertext{
-order: 2;
-text-align: center;
+    .socialicons{
+    order: 1;
+    }
+    .footertext{
+    order: 2;
+    text-align: center;
 
 }
 }
