@@ -49,12 +49,8 @@ header{
 nav, i{
     cursor: pointer;
     color: #950a0a;
+    background-color: white;
 }
-nav, i:hover
-    {
-        color: black;
-        transition: 0.3s;
-    }
 
 .navlink{
     padding: 20px
@@ -65,11 +61,17 @@ nav, i:hover
     font-size: 1.7em;
 }
 
-body.dark-theme, header, nav{
+body.dark-theme header{
     background-color: #121212;
 }
 
-
+body.dark-theme a{
+    color: white;
+     }
+body.dark-theme i{
+    background-color: #121212;
+    color: white;
+     }
 
 /* Hamburger Menu Hidden*/
 .burger {
