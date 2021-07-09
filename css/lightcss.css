@@ -160,6 +160,9 @@ body.dark-theme i{
         font-weight: bold;
         font-size: large;
     }
+    body.dark-theme .nav{
+        background: black;
+    }
     .hero-image{
         height: auto;
         width: 100%;
