@@ -37,6 +37,10 @@ header{
 .logo{
     width: auto;
     height: 70%;
+    color: #950a0a;
+}
+body.dark-theme .logo{
+    fill: white!important;
 }
 .nav {
     display: flex;
