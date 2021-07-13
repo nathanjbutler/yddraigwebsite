@@ -1,4 +1,3 @@
-/* Light Theme CSS */
 * {
     vertical-align: baseline;
     font-weight: inherit;
@@ -10,11 +9,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
 }
 body {
     background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    color: #222;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 14px;
   }
 /* Header is the container, inside of this is the logo and the navbar */
 header{
@@ -32,8 +32,14 @@ header{
 }
 .logo{
     width: auto;
-    height: 70%;
-    color: #950a0a;   
+    height: 100%;
+    color: #950a0a;
+    padding: 10px;   
+}
+.logo img{
+    height: 100%;
+    width: auto;
+    
 }
 .nav {
     display: flex;
@@ -60,7 +66,7 @@ nav, i{
     font-size: 2.2em;
     display: none;
 }
-/* Hero Image */
+/* Hero Image on every page*/
 .hero{
     background-color: black;
     justify-content: center;
@@ -81,72 +87,82 @@ nav, i{
     height: 100vh;
     width: auto;  
   }
+  /* Generic section css */
 section{
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+/* Image of small shield */
 .shield{
     height: 50px;
     width: 50px;
     margin: 15px;
 }
+h1{
+    font-size: 22px;
+    color: #950a0a;
+    font-style: normal;
+    margin: 1em 0 .5em;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+ }
+
+/* Section of the Image links */
 .imagelinks{
     display: flex;
-    justify-content: center;
-    background-color: DodgerBlue;
-    flex-direction: row;
-
+    width: 100%;
+    justify-content: space-evenly;
+    /* height: 100vh; */
 }
-.imagelinkdiv{
-    background-color: #f1f1f1;
-    width: 100px;
-    margin: 10px;
+.imglink{
+   
+}
+
+/* Text area Home page */
+.textarea{
+    padding: 30px 15px 60px 15px;
+    background: #f3f3f3;
     text-align: center;
-    line-height: 75px;
-    font-size: 30px;
-    
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   /* FOOTER */
-.footer{
+.footerone{
     width: 100%;
     height: 10vh;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
+    /* flex-direction: column; */
     align-items: center;
     margin: 0px;    
+    justify-content: space-between;
   }
- footer img{
+.footertwo /*Electric Boogaloo*/{
+      width: 100%;
+      height: auto;
+      margin: 0px;
+  }
+footer img{
      height: 5vh;
-     width: auto;
  }
- .socialicons i{
+ /* Social media Icons in the footer */
+.socialicons i{
     padding: 10px;
  }
 .footertext{
     text-align: center;
+    width: 100%;
 }
-  .socialicons i:hover
+.socialicons i:hover
   {
-      color: #950a0a;
-      transition: 0.3s;
+      color: black;
+      transition: 0.9s;
   }
 /* This is so the hamburger menu shows up on smaller devices */
 @media screen and (max-width: 1050px) {
