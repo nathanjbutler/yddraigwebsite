@@ -30,10 +30,6 @@ header{
     z-index: 1;
     width: 100%;
 }
-a.logo{
-    height: 100%;
-    width: auto;
-}
 .logo{
     width: auto;
     height: 70%;
@@ -153,7 +149,7 @@ section{
       transition: 0.3s;
   }
 /* This is so the hamburger menu shows up on smaller devices */
-@media screen and (max-width: 978px) {
+@media screen and (max-width: 1050px) {
     .header{
         /* position: fixed; */
         width: 100vw;
@@ -204,4 +200,9 @@ section{
     text-align: center;
 }
 }
-
+@media screen and (max-width: 239px){
+    .logo
+    {
+        display: none;
+    }
+}
