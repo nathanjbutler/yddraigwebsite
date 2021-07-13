@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>YDdraigVikings</title>
+<title>Y Ddraig Vikings</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- CSS only -->
@@ -9,134 +9,29 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&family=Roboto&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/78512fb248.js" crossorigin="anonymous"></script>
 <body>
-    
+<!-- Header -->
 <header class="header">
-        <img src="img/YDdraigLogo.svg" alt="Logo" class="logo">
+        <a href="index.html" class="logo"><img src="img/YDdraigLogo.svg" alt="Logo" class="logo"></a>
         <ul class="nav">
-            <li class="navlink"><a href="#">About</a></li>
-            <li class="navlink"><a href="#">Combat</a></li>
-            <li class="navlink"><a href="#">Living History</a></li>
-            <!-- <li class="navlink"><a href="#">Join Us</a></li> -->
-            <li class="navlink"><a href="#">Gallery</a></li>
-            <li class="navlink"><a href="#">Resources</a></li>
-            <li class="navlink"><a href="#">Contact Us</a></li>
-            <!-- <button class="btn-toggle"><i class="fas fa-shield-alt fa-2x"></i></button> -->
-                <!-- <script>
-                    const btn = document.querySelector(".btn-toggle");
-
-                    btn.addEventListener("click", function () {
-                    document.body.classList.toggle("dark-theme");
-                    });
-                    
-                    const image = document.querySelector('.logo')
-                    image.setAttribute('src', 'img/YDdraigLogo.svg');
-                    image.setAttribute('alt', 'Dark Mode Image');
-                </script> -->
-
+            <li class="navlink"><a href="aboutus.html">About</a></li>
+            <li class="navlink"><a href="combat.html">Combat</a></li>
+            <li class="navlink"><a href="livinghistory.html">Living History</a></li>
+            <li class="navlink"><a href="gallery.html">Gallery</a></li>
+            <li class="navlink"><a href="resources.html">Resources</a></li>
+            <li class="navlink"><a href="contactus.html">Contact Us</a></li>
         </ul>
         <div class="burger">
             <i class="fa fa-bars"></i>
         </div>
-        <script>
-            // Selection of HTML objects
-            const burger = document.querySelector('.burger i');
-            const nav = document.querySelector('.nav');
-
-            // Defining a function
-            function toggleNav() {
-                burger.classList.toggle('fa-bars');
-                burger.classList.toggle('fa-times');
-                nav.classList.toggle('active');
-            }
-
-            // Calling the function after click event occurs
-            burger.addEventListener('click', function() {
-                toggleNav();
-            });
-                    </script>
-
 </header>
-
 <!-- Hero Image -->
 <section id="hero" class="hero"> 
     <img src="img/kenheroimg.jpg" class="hero-image">
-    <!-- <div class="hero-text">
-        <h1>I am John Doe</h1>
-        <p>And I'm a Photographer</p> -->
 </section>
+ Home
 
 
-
-
-<section class="test">
-    <img src="img/yddraig-shield.svg" alt="Logo" class="shield">
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-<p>text</p>
-
-</section>
-
+<!-- Footer -->
 <footer class="footer">
         <img src="img/YDdraigLogo.svg" alt="Logo" class="logofooter">
 
@@ -152,5 +47,22 @@
             <a href="https://twitter.com/YDdraigVikings"><i class="fa fa-twitter fa-2x"></i></a>
         </div>
 </footer>
+    <script>
+        // Selection of HTML objects
+        const burger = document.querySelector('.burger i');
+        const nav = document.querySelector('.nav');
+
+        // Defining a function
+        function toggleNav() {
+            burger.classList.toggle('fa-bars');
+            burger.classList.toggle('fa-times');
+            nav.classList.toggle('active');
+        }
+
+        // Calling the function after click event occurs
+        burger.addEventListener('click', function() {
+            toggleNav();
+        });
+    </script>
 </body>
 </html>
