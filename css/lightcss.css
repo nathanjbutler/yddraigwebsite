@@ -10,16 +10,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
 body {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
-  } 
-  body.dark-theme {
-    color: #eee;
-    background: #121212;
   }
-  
 /* Header is the container, inside of this is the logo and the navbar */
 header{
     display: flex;
@@ -38,14 +34,14 @@ header{
     width: auto;
     height: 70%;
     color: #950a0a;
+    margin: 0px;
+    padding: 0px;
 }
-
 .nav {
     display: flex;
     height: 100%;
     align-items: center;
     flex-wrap: wrap;
-    /* flex-grow: 2; */
     list-style: none;    
 }
 nav, i{
@@ -61,17 +57,6 @@ nav, i{
     text-decoration: none;
     font-size: 1.7em;
 }
-body.dark-theme header{
-    background-color: #121212;
-}
-body.dark-theme a{
-    color: white;
-     }
-body.dark-theme i{
-    background-color: #121212;
-    color: white;
-     }
-
 /* Hamburger Menu Hidden*/
 .burger {
     font-size: 2.2em;
@@ -109,7 +94,22 @@ section{
     width: 50px;
     margin: 15px;
 }
+.imagelinks{
+    display: flex;
+    justify-content: center;
+    background-color: DodgerBlue;
+    flex-direction: row;
 
+}
+.imagelinkdiv{
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    
+}
 
 
 
@@ -145,14 +145,6 @@ section{
 .footertext{
     text-align: center;
 }
-  /* .socialicons i
-  {
-      padding-right: 20px;
-  }
-  .socialicons p
-  {
-      padding: 20px;
-  } */
   .socialicons i:hover
   {
       color: #950a0a;
@@ -183,9 +175,6 @@ section{
         font-weight: bold;
         font-size: large;
     }
-    body.dark-theme .nav{
-        background: black;
-    }
     .hero-image{
         height: auto;
         width: 100%;
@@ -196,10 +185,6 @@ section{
     .nav.active {
         right: 0;
     }
-    body.dark-theme i{
-        background-color: #121212;
-        color: white;
-         }
     .logo
     {
         margin: 0px;
@@ -207,6 +192,7 @@ section{
     .logofooter{
     order: 0;
     flex-grow: 0;
+    
     }
     .socialicons{
     order: 1;
