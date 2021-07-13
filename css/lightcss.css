@@ -39,9 +39,7 @@ header{
     height: 70%;
     color: #950a0a;
 }
-body.dark-theme .logo{
-    fill: white!important;
-}
+
 .nav {
     display: flex;
     height: 100%;
@@ -93,12 +91,39 @@ body.dark-theme i{
     background-repeat: no-repeat;
     flex-grow: 1;
     position: relative;
-    top: 10vh;  
+    top: 10vh;
+    margin-bottom: 10vh;  
 }
 .hero-image {
     height: 100vh;
     width: auto;  
   }
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.shield{
+    height: 50px;
+    width: 50px;
+    margin: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   /* FOOTER */
 .footer{
     width: 100%;
