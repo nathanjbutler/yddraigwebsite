@@ -30,12 +30,14 @@ header{
     z-index: 1;
     width: 100%;
 }
+a.logo{
+    height: 100%;
+    width: auto;
+}
 .logo{
     width: auto;
     height: 70%;
-    color: #950a0a;
-    margin: 0px;
-    padding: 0px;
+    color: #950a0a;   
 }
 .nav {
     display: flex;
