@@ -130,8 +130,8 @@ p {
     width: 400px;
     height: 300px;
     margin: 10px;
-    -o-object-fit: cover;
-    object-fit: cover;
+    -o-object-fit:contain;
+    object-fit: contain;
 }
 
 /* Text area Home page */
