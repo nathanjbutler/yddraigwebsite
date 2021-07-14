@@ -11,7 +11,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     color: #222;
     font-family: 'Open Sans',sans-serif;
     font-size: 14px;
@@ -116,14 +116,22 @@ p {
  }
 
 /* Section of the Image links */
-.imagelinks{
-    display: flex;
+.imgcontainer{
     width: 100%;
-    justify-content: space-evenly;
-    /* height: 100vh; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #f3f3f3;
+    flex-direction: row;
 }
-.imglink{
-   
+.imgcontainer img{
+    /* background-color: #f1f1f1; */
+    width: 400px;
+    height: 300px;
+    margin: 10px;
+    -o-object-fit: cover;
+    object-fit: cover;
 }
 
 /* Text area Home page */
