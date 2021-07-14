@@ -127,11 +127,20 @@ p {
 }
 .imgcontainer img{
     /* background-color: #f1f1f1; */
-    width: 450px;
-    height: 350px;
+    width: 500px;
+    height: 375px;
     margin: 10px;
     -o-object-fit: cover;
     object-fit:cover;
+    flex-grow: 1;
+}
+.imgcontainer img:hover{
+    opacity: 0.6;
+    transition: 0.8s;
+}
+.imgcontainer img:hover::after{
+    opacity: 0.6;
+    transition: 0.8s;
 }
 /* Keeps image sizes responsive */
 @media only screen and (min-width: 768px) {
@@ -161,7 +170,7 @@ p {
 
 /* Text area Home page */
 .textarea{
-    padding: 30px 15px 60px 15px;
+    padding: 100px;
     background: #f3f3f3;
     text-align: center;
 }
