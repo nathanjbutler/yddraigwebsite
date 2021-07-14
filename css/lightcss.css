@@ -61,6 +61,9 @@ nav, i{
     text-decoration: none;
     font-size: 1.7em;
 }
+.navlink a:hover{
+    color: black;
+}
 /* Hamburger Menu Hidden*/
 .burger {
     font-size: 2.2em;
@@ -106,7 +109,6 @@ h1{
     font-style: normal;
     margin: 1em 0 .5em;
 }
-
 p {
     display: block;
     margin-block-start: 1em;
@@ -114,7 +116,6 @@ p {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
  }
-
 /* Section of the Image links */
 .imgcontainer{
     width: 100%;
@@ -133,6 +134,13 @@ p {
     -o-object-fit: cover;
     object-fit:cover;
     flex-grow: 1;
+    color:#999;       
+    /* Transitions for when the mouse comes off the link */
+    transition: opacity 0.3s linear; /* vendorless fallback */
+    -o-transition: opacity 0.3s linear; /* opera */
+    -ms-transition: opacity 0.3s linear; /* IE 10 */
+    -moz-transition: opacity 0.3s linear; /* Firefox */
+    -webkit-transition: opacity 0.3s linear; /*safari and chrome */
 }
 .imgcontainer img:hover{
     opacity: 0.6;
@@ -142,6 +150,7 @@ p {
     opacity: 0.6;
     transition: 0.8s;
 }
+
 /* Keeps image sizes responsive */
 @media only screen and (min-width: 768px) {
     .imgcontainer img {
@@ -195,7 +204,12 @@ footer img{
  }
  /* Social media Icons in the footer */
 .socialicons i{
-    padding: 10px;
+    padding: 10px;       
+    transition: color 0.3s linear; /* vendorless fallback */
+    -o-transition: color 0.3s linear; /* opera */
+    -ms-transition: color 0.3s linear; /* IE 10 */
+    -moz-transition: color 0.3s linear; /* Firefox */
+    -webkit-transition: color 0.3s linear; /*safari and chrome */
  }
 .footertext{
     text-align: center;
