@@ -127,8 +127,8 @@ p {
 }
 .imgcontainer img{
     /* background-color: #f1f1f1; */
-    width: 400px;
-    height: 300px;
+    width: 450px;
+    height: 350px;
     margin: 10px;
     -o-object-fit: cover;
     object-fit:cover;
