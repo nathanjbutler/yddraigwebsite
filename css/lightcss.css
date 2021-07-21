@@ -60,6 +60,11 @@ nav, i{
     color: #950a0a;
     text-decoration: none;
     font-size: 1.7em;
+    transition: color 0.3s linear; /* vendorless fallback */
+    -o-transition: color 0.3s linear; /* opera */
+    -ms-transition: color 0.3s linear; /* IE 10 */
+    -moz-transition: color 0.3s linear; /* Firefox */
+    -webkit-transition: color 0.3s linear; /*safari and chrome */
 }
 .navlink a:hover{
     color: black;
@@ -150,7 +155,11 @@ p {
     opacity: 0.6;
     transition: 0.8s;
 }
-
+.imgcontainer a{
+    margin: 0;
+    padding: 0;
+    
+}
 /* Keeps image sizes responsive */
 @media only screen and (min-width: 768px) {
     .imgcontainer img {
@@ -221,7 +230,7 @@ footer img{
       transition: 0.9s;
   }
 /* This is so the hamburger menu shows up on smaller devices */
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1260px) {
     .header{
         /* position: fixed; */
         width: 100vw;
