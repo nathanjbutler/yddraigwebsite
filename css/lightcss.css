@@ -131,22 +131,23 @@ p {
     background-color: #f3f3f3;
     flex-direction: row;
 }
-.imgcontainer img{
-    /* background-color: #f1f1f1; */
-    width: 500px;
-    height: 375px;
-    margin: 10px;
-    -o-object-fit: cover;
-    object-fit:cover;
-    flex-grow: 1;
-    color:#999;       
-    /* Transitions for when the mouse comes off the link */
-    transition: opacity 0.3s linear; /* vendorless fallback */
-    -o-transition: opacity 0.3s linear; /* opera */
-    -ms-transition: opacity 0.3s linear; /* IE 10 */
-    -moz-transition: opacity 0.3s linear; /* Firefox */
-    -webkit-transition: opacity 0.3s linear; /*safari and chrome */
+
+.imgcontainer a{
+    width: 500px; 
+    height: 375px; 
+    margin: 10px; 
+    -o-object-fit: cover; 
+    object-fit:cover; 
 }
+ .imgcontainer img{ 
+     color:#999;        
+     /* Transitions for when the mouse comes off the link  */
+     transition: opacity 0.3s linear; /*vendorless fallback */
+     -o-transition: opacity 0.3s linear; /*opera */
+     -ms-transition: opacity 0.3s linear; /*IE 10 */
+     -moz-transition: opacity 0.3s linear; /*Firefox */
+     -webkit-transition: opacity 0.3s linear; /*safari and chrome */
+ } 
 .imgcontainer img:hover{
     opacity: 0.6;
     transition: 0.8s;
@@ -156,9 +157,8 @@ p {
     transition: 0.8s;
 }
 .imgcontainer a{
-    margin: 0;
-    padding: 0;
-    
+    flex-grow: 1;
+
 }
 /* Keeps image sizes responsive */
 @media only screen and (min-width: 768px) {
