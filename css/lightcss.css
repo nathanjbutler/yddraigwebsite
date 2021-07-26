@@ -172,7 +172,7 @@ p {
     font-size: 2rem;
     color: white;
     z-index: 20;
-    -webkit-text-stroke-width: 0.01px;
+    -webkit-text-stroke-width: 0.001px;
     -webkit-text-stroke-color: black;
 }
 .imgcontainer img:hover{
