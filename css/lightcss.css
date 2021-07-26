@@ -13,7 +13,7 @@
 body {
     background-color: white;
     color: #222;
-    font-family: 'Open Sans',sans-serif;
+    font-family: 'Trebuchet MS', sans-serif;
     font-size: 14px;
   }
 /* Header is the container, inside of this is the logo and the navbar */
@@ -46,7 +46,8 @@ header{
     height: 100%;
     align-items: center;
     flex-wrap: wrap;
-    list-style: none;    
+    list-style: none;
+    z-index: 100000;  ;    
 }
 nav, i{
     cursor: pointer;
@@ -130,6 +131,7 @@ p {
     flex-wrap: wrap;
     background-color: #f3f3f3;
     flex-direction: row;
+
 }
 .imgcontainer a{
     position: relative;
@@ -159,21 +161,22 @@ p {
     object-fit: cover;
     -o-object-fit: cover; 
     object-fit:cover; 
-  /* Transitions for when the mouse comes off the link  */
+    filter: brightness(60%);
+/* Transitions for when the mouse comes off the link  */
     transition: opacity 0.3s linear; /*vendorless fallback */
     -o-transition: opacity 0.3s linear; /*opera */
     -ms-transition: opacity 0.3s linear; /*IE 10 */
     -moz-transition: opacity 0.3s linear; /*Firefox */
     -webkit-transition: opacity 0.3s linear; /*safari and chrome */
+
 }
 .imgcontainer p{
     position:absolute;
-    font-weight: bold;
-    font-size: 2rem;
+    /* font-weight: bold; */
+    font-size: 2.1rem;
     color: white;
     z-index: 20;
-    -webkit-text-stroke-width: 0.001px;
-    -webkit-text-stroke-color: black;
+ 
 }
 .imgcontainer img:hover{
     opacity: 0.6;
@@ -276,6 +279,8 @@ footer img{
         transition: all 400ms;
         font-weight: bold;
         font-size: large;
+        z-index: 100000;
+        
     }
     .hero-image{
         height: auto;
@@ -302,6 +307,9 @@ footer img{
     .footertext{
     order: 2;
     text-align: center;
+}
+.textarea{
+    padding: 10px;
 }
 }
 @media screen and (max-width: 239px){
