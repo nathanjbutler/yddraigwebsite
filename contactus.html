@@ -35,7 +35,6 @@
 </section>
 
 <section class="textarea">
-    <div class="contacttext">
     <h1>Contact Us</h1>
     <p>Y Ddraig are always on the lookout for new recruits, enthusiastic, adventurous members willing to join us on summer weekends 
         at castles and events around the country, for small skirmishes, pitched battles and living history displays. 
@@ -61,21 +60,28 @@
     </p>
         <p>
             If you are interested in living a little bit of the Viking world, or becoming a Viking warrior and earning a place in Valhalla, 
-            please contact Y Ddraig through the group’s Jarl, via email.
+            please contact Y Ddraig through the group’s Jarl, via email. warwickkinrade@hotmail.com
         </p>
-        <p>
-            warwickkinrade@hotmail.com [[form to fill in]]] 
-        </p></div>
-
         <div class="contactform">
-            <form action="#">
-                <label for="name">Your Name:</label><br>
-                <input type="text" id="fname" name="fname"><br>
-                <label for="email">Email:</label><br>
-                <input type="text" id="lname" name="lname"><br><br>
+            <h3>Enquire Here</h3>
+                <br>
+              <form action="/contactus.html">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name..(*)">
+            
+                <label for="country">Enquiry Type</label>
+                <select id="enqtype" name="enqtype">
+                  <option value="showhire">Show Hire</option>
+                  <option value="recruitment">Recruitment</option>
+                  <option value="general">General</option>
+                </select>
+            
+                <label for="subject">Message</label>
+                <textarea id="subject" name="subject" placeholder="..." style="height:200px"></textarea>
+            
                 <input type="submit" value="Submit">
               </form>
-        </div>
+            </div>
     </section>
 
 
