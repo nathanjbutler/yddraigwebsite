@@ -12,8 +12,8 @@
 }
 body {
     background-color: white;
-    color: #222;
-    font-family: 'Trebuchet MS', sans-serif;
+    color: #161616;
+    font-family: 'Open Sans',sans-serif;
     font-size: 14px;
   }
 /* Header is the container, inside of this is the logo and the navbar */
@@ -150,8 +150,13 @@ section{
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 250px;
+    padding-right: 250px;
+    font-size: medium;
+ }
+ .textarea a{
+    text-decoration: none;
+    color: #950a0a;
  }
 /* Section of the Image links */
 .imgcontainer{
@@ -282,14 +287,16 @@ footer img{
   input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
-    border: 2px solid #000;
+    border: 2px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
   }
-  
+   input[type=text]:focus, select:focus, textarea:focus{
+    border: 2px solid #950a0a;
+   }
   input[type=submit] {
     background-color: #000;
     color: white;
@@ -298,18 +305,14 @@ footer img{
     border-radius: 4px;
     cursor: pointer;
   }
-  
   input[type=submit]:hover {
     background-color: #950a0a;
   }
-  
   .contactform {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
   }
-
-
 /* This is so the hamburger menu shows up on smaller devices */
 @media screen and (max-width: 1260px) {
     .header{
