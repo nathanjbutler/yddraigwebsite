@@ -283,6 +283,21 @@ footer img{
       color: black;
       transition: 0.9s;
   }
+/*Gallery*/
+.gallery{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #f3f3f3;
+    flex-direction: row;
+}
+.gallery img{
+    height: 80vh;
+    object-fit: cover;
+    -o-object-fit: cover;
+}
 /* Contact Form */
   input[type=text], select, textarea {
     width: 100%;
