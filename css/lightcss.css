@@ -284,12 +284,22 @@ footer img{
       transition: 0.9s;
   }
 /*Gallery*/
-#gallery img{
-    max-width: 100%;
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+.gallery img{
+    width: 25%;
     height: auto;
-    flex-flow: column wrap;
-    padding: 50px;
-  }
+    object-fit: cover;
+    /* align-self: flex-start; */
+    /* align-items: stretch; */
+    
+}
+
 /* Contact Form */
   input[type=text], select, textarea {
     width: 100%;
