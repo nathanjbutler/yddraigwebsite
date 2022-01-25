@@ -285,7 +285,7 @@ footer img{
   }
 /*Gallery*/
 #gallery img{
-    width: 100%;
+    max-width: 100%;
     height: auto;
     flex-flow: column wrap;
     padding: 50px;
