@@ -284,7 +284,8 @@ footer img{
       transition: 0.9s;
   }
 /*Gallery*/
-.gallery{
+
+.galleryimg{
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -292,12 +293,7 @@ footer img{
     flex-wrap: wrap;
     background-color: #f3f3f3;
     flex-direction: row;
-}
-.gallery img{
-    height: 60vh;
-    object-fit: cover;
-    -o-object-fit: cover;
-}
+  }
 /* Contact Form */
   input[type=text], select, textarea {
     width: 100%;
