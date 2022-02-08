@@ -423,7 +423,10 @@ footer img{
   .demo:hover {
     opacity: 1;
   }
-  
+  #recruitment{
+    height: 7vh;
+    margin: 20px;
+  }
 /* Contact Form */
   input[type=text], select, textarea {
     width: 100%;
