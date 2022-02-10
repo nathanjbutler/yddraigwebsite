@@ -68,13 +68,13 @@
         <br>
         <h1>Enquire Here</h1>
         <div class="contactform">
-              <form action="mailto:nathanjbutler793@gmail.com"
-                method="POST"
-                enctype="multipart/form-data"
-                name="emailform">
+              <form action="https://formsubmit.co/cb24d598eaa5d44ab42c89f2963827f3 " method="POST" name="emailform">
                 <label for="name">Your Name</label>
-                <input type="text" id="name" name="name" placeholder="Your name..(*)">
-            
+                <input type="text" id="name" name="name" placeholder="Your name(*)" required>
+
+                <label for="mmail">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Email Address(*)" required>
+
                 <label for="country">Enquiry Type</label>
                 <select id="enqtype" name="enqtype">
                   <option value="showhire">Show Hire</option>
@@ -83,9 +83,12 @@
                 </select>
             
                 <label for="subject">Message</label>
-                <textarea id="subject" name="subject" placeholder="..." style="height:200px"></textarea>
+                <textarea id="subject" name="subject" placeholder="..." style="height:200px" required></textarea>
             
                 <input type="submit" value="Submit">
+
+                <!-- Thank you page -->
+                <input type="hidden" name="_next" value="contactus.html">
               </form>
             </div>
     </section>
