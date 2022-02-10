@@ -309,6 +309,7 @@ footer img{
     height: 100%;
     padding: 2px;
 }
+
 /* The Modal (background) */
 .modal {
     /* display: none; */
@@ -334,7 +335,7 @@ footer img{
     width: 100%;
     /* height: 100%; */
   }
-  
+
   /* The Close Button */
   .close {
     color: black;
@@ -522,15 +523,42 @@ footer img{
     order: 2;
     text-align: center;
 }
-.textarea p{
-padding-left: 20px;
-padding-right: 20px;
+    .textarea p{
+    padding-left: 20px;
+    padding-right: 20px;
+    }
+    .mySlides img {
+        max-width: 100%;
+        max-height: 80vh;
+    }
+    .mySlides p{
+        padding:0;
+        font-size: large;
+        color: #000;
+    }
 }
+@media screen and (max-width: 540px) {
+    .mySlides img {
+        max-width: 100%;
+        max-height: 60vh;
+    }
+    .mySlides p {
+        font-size: medium;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+@media screen and (max-width: 360px) {
+    .mySlides img {
+        max-width: 100%;
+        max-height: 50vh;
+    }
 }
 @media screen and (max-width: 239px){
     .logo
     {
         display: none;
     }
+
 }
 
