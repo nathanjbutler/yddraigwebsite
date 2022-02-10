@@ -428,7 +428,7 @@ footer img{
     margin: 20px;
   }
 /* Contact Form */
-  input[type=text], select, textarea {
+  input[type=text], input[type=email], select, textarea {
     width: 100%;
     padding: 12px;
     border: 2px solid #ccc;
@@ -438,7 +438,7 @@ footer img{
     margin-bottom: 16px;
     resize: vertical;
   }
-   input[type=text]:focus, select:focus, textarea:focus{
+   input[type=text]:focus, input[type=email]:focus, select:focus, textarea:focus{
     border: 2px solid #950a0a;
    }
   input[type=submit] {
