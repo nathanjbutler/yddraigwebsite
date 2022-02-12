@@ -28,7 +28,7 @@ header{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    height: 10vh;
+    height: 15vh;
     margin: 0;
     background-color: rgb(255, 255, 255);
     position: fixed;
@@ -39,7 +39,7 @@ header{
     width: auto;
     height: 100%;
     color: #950a0a;
-    padding: 10px;   
+    padding: 10px; 
 }
 .logo img{
     height: 100%;
@@ -48,9 +48,10 @@ header{
 }
 .nav {
     display: flex;
-    height: 100%;
-    align-items: center;
     flex-wrap: wrap;
+    height: 100%;
+    align-items:center;
+    
     list-style: none;
        
 }
@@ -312,15 +313,11 @@ footer img{
 
 /* The Modal (background) */
 .modal {
-    /* display: none; */
     position: fixed;
-    /* z-index: 1; */
     padding-top: 100px;
-    /* left: 0; */
     top: 0;
     width: 100%;
     height: 100%;
-    /* overflow: auto; */
     background-color: #f3f3f3;
 
     opacity: 0;
@@ -331,9 +328,7 @@ footer img{
   /* Modal Content */
   .modal-content {
     background-color: #fefefe;
-    /* padding: 0; */
     width: 100%;
-    /* height: 100%; */
   }
 
   /* The Close Button */
