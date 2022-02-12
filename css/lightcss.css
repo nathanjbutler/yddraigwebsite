@@ -309,6 +309,7 @@ footer img{
     width: 100%;
     height: 100%;
     padding: 2px;
+    cursor: pointer;
 }
 
 /* The Modal (background) */
