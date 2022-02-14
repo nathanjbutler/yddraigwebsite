@@ -1,520 +1,420 @@
-* {
-    vertical-align: baseline;
-    font-weight: inherit;
-    font-family: inherit;
-    font-style: inherit;
-    font-size: 100%;
-    border: 0;
-    outline: 0;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-body {
-    background-color: white;
-    color: #161616;
-    font-family: 'Open Sans',sans-serif;
-    font-size: 14px;
-  }
-
-a {
-    text-decoration: none;
-    color: #950a0a;
-}
-/* Header is the container, inside of this is the logo and the navbar */
-header{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    height: 12vh;
-    margin: 0;
-    background-color: rgb(255, 255, 255);
-    position: fixed;
-    z-index: 10000;
-    width: 100%;
-}
-.logo{
-    width: auto;
-    height: 100%;
-    color: #950a0a;
-    padding: 10px; 
-}
-.logo img{
-    height: 100%;
-    width: auto;
-    
-}
-.nav {
-    display: flex;
-    flex-wrap: wrap;
-    height: 100%;
-    align-items:center;
-    
-    list-style: none;
-       
-}
-nav, i{
-    cursor: pointer;
-    color: #950a0a;
-    background-color: white;
-}
-.navlink{
-    padding: 20px
-}
-.navlink a {
-    color: #950a0a;
-    text-decoration: none;
-    font-size: 1.7em;
-    transition: color 0.3s linear; /* vendorless fallback */
-    -o-transition: color 0.3s linear; /* opera */
-    -ms-transition: color 0.3s linear; /* IE 10 */
-    -moz-transition: color 0.3s linear; /* Firefox */
-    -webkit-transition: color 0.3s linear; /*safari and chrome */
-}
-.navlink a:hover{
-    color: black;
-}
-/* Hamburger Menu Hidden*/
-.burger {
-    font-size: 2.2em;
-    display: none;
-}
-/* Hero Image on every page*/
-.hero{
-    background-color:black;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    /* height: 100vh; */
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    flex-grow: 1;
-    position: relative;
-    top: 10vh;
-    margin-bottom: 10vh;  
-}
-.hero-image {
-    height: 100vh;
-    width: auto;  
-  }
-.top{
-    background-color:white;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    height: 60vh;
-    width: 100%;
-    background-position: center;
-    background-size:cover;
-    background-repeat: no-repeat;
-    flex-grow: 1;
-    position: relative;
-    top: 10vh;
-    margin-bottom: 10vh; 
-
-}
-.top-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-  }
-  /* Generic section css */
-section{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* Image of small shield */
-.shield{
-    height: 50px;
-    width: 50px;
-    margin: 20px;
-}
-.textarea h1{
-    font-size: 22px;
-    color: #950a0a;
-    font-style: normal;
-}
-.textarea h1::after{
-    display: block;
-    content: '';
-    width: 100%;
-    border-bottom: 2px solid #950a0a;
-    margin-top: 10px;
-}
-.textarea p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-left: 250px;
-    padding-right: 250px;
-    font-size: medium;
- }
- .textarea a{
-    text-decoration: none;
-    color: #950a0a;
- }
-/* Section of the Image links. Home Page */
-.imgcontainer{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: #f3f3f3;
-    flex-direction: row;
-}
-.imgcontainer a{
-    position: relative;
-    flex-grow: 1;
-    height: 250px;
-    width: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    overflow: hidden;
-}
-.imgcontainer span{
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color:black;
-    opacity: 0.25;
-    transition: 0.3s all ease;
-} 
-.imgcontainer a img{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    -o-object-fit: cover;
-    transition: 0.3s all ease; 
-}
-.imgcontainer p{
-    position:absolute;
-    font-size: 2.1rem;
-    color: white;
-}
-.imgcontainer a:hover span{
- opacity: 0.5;
-}
-.imgcontainer a:hover img{
-transform: scale(1.05);
-}
-/* Text area Home page */
-.textarea{
-    /* padding: 50px; */
-    background: #f3f3f3;
-    text-align: center;
-}
-  /* FOOTER */
-.footerone{
-    width: 100%;
-    height: 10vh;
-    display: flex;
-    flex-wrap: wrap;
-    /* flex-direction: column; */
-    align-items: center;
-    margin: 0px;    
-    justify-content: space-between;
-  }
-.footertwo /*Electric Boogaloo*/{
-      width: 100%;
-      height: auto;
-      margin: 0px;
-  }
-footer img{
-     height: 5vh;
- }
- /* Social media Icons in the footer */
-.socialicons i{
-    padding: 10px;       
-    transition: color 0.3s linear; /* vendorless fallback */
-    -o-transition: color 0.3s linear; /* opera */
-    -ms-transition: color 0.3s linear; /* IE 10 */
-    -moz-transition: color 0.3s linear; /* Firefox */
-    -webkit-transition: color 0.3s linear; /*safari and chrome */
- }
-.footertext{
-    text-align: center;
-    width: 100%;
-}
-.footertext a{
-    text-decoration: none;
-    color: #950a0a;
-}
-.socialicons i:hover
-  {
-      color: black;
-      transition: 0.9s;
-  }
-/*Gallery*/
-.gallery{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    flex-direction: row;
-    align-items: stretch;
-    display: flex;
-    flex-wrap: wrap;
-}
-.gallery li{
-    flex: 1 1 20rem;
-    min-height: 30vh;
-    max-height: 50vh;
-}
-.gallery img{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    padding: 2px;
-    cursor: pointer;
-}
-
-/* The Modal (background) */
-.modal {
-    position: fixed;
-    padding-top: 100px;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #f3f3f3;
-
-    opacity: 0;
-    z-index: -1;
-    transition: 0.25s all ease;
-  }
-  
-  /* Modal Content */
-  .modal-content {
-    background-color: #fefefe;
-    width: 100%;
-  }
-
-  /* The Close Button */
-  .close {
-    color: black;
-    position: absolute;
-    right: 25px;
-    font-size: 35px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #999;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  /* Hide the slides by default */
-  .mySlides {
-    display: none;
-    text-align: center;
-  }
-
-  .mySlides img{
-      max-width: 100%;
-      max-height: 70vh;
-  }
-
-  .mySlides p{
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-left: 250px;
-    padding-right: 250px;
-    font-size: large;
-    color: #000;
-  }
-  
-  /* Next & previous buttons */
-  .prev,
-  .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: black;
-    font-weight: bold;
-    font-size: 20px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: black;
-    font-size: large;
-    padding: 8px 12px;
-    text-align: center;
-    top: 0;
-  }
-  
-  /* Caption text */
-  .caption-container {
-    text-align: center;
-    /* background-color: black; */
-    padding: 2px 16px;
-    color: black;
-  }
-  
-  img.demo {
-    opacity: 0.6;
-  }
-  
-  .active,
-  .demo:hover {
-    opacity: 1;
-  }
-  #recruitment{
-    height: 7vh;
-    margin: 20px;
-  }
-/* Contact Form */
-  input[type=text], input[type=email], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-  }
-   input[type=text]:focus, input[type=email]:focus, select:focus, textarea:focus{
-    border: 2px solid #950a0a;
-   }
-  input[type=submit] {
-    background-color: #000;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  input[type=submit]:hover {
-    background-color: #950a0a;
-  }
-  .contactform {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
-/* This is so the hamburger menu shows up on smaller devices */
-@media screen and (max-width: 1260px) {
-    .header{
-        /* position: fixed; */
-        width: 100vw;
+    * {
+        vertical-align: baseline;
+        font-weight: inherit;
+        font-family: inherit;
+        font-style: inherit;
+        font-size: 100%;
+        border: 0;
+        outline: 0;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
     }
-    .burger {
-        display: block;
-        padding-right: 30px;   
+    body {
+        background-color: white;
+        color: #161616;
+        font-family: 'Open Sans',sans-serif;
+        font-size: larger;
+    }
+
+    a {
+        text-decoration: none;
+        color: #950a0a;
+    }
+    /* Header is the container, inside of this is the logo and the navbar */
+    header{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        height: 12vh;
+        margin: 0;
+        background-color: rgb(255, 255, 255);
+        position: fixed;
+        z-index: 10000;
+        width: 100%;
+    }
+    .logo{
+        width: auto;
+        height: 100%;
+        color: #950a0a;
+        padding: 10px; 
+    }
+    .logo img{
+        height: 100%;
+        width: auto;
+        
     }
     .nav {
-        margin: 0;
-        background: white;
-        position: fixed;
-        right: -100%;
-        top: 10vh;
-        width: 100%;
-        height: 80vh;
-        flex-direction: column;
-        justify-content: space-around;
-        padding: 0;
-        transition: all 400ms;
-        font-weight: bold;
-        font-size: large;
-        z-index: 100000;
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
+        align-items:center;
+        list-style: none;   
     }
-    .hero-image{
-        height: auto;
+    nav, i{
+        cursor: pointer;
+        color: #950a0a;
+        background-color: white;
+    }
+    .navlink{
+        padding: 20px
+    }
+    .navlink a {
+        color: #950a0a;
+        text-decoration: none;
+        font-size: 1.7em;
+        transition: color 0.3s linear; /* vendorless fallback */
+        -o-transition: color 0.3s linear; /* opera */
+        -ms-transition: color 0.3s linear; /* IE 10 */
+        -moz-transition: color 0.3s linear; /* Firefox */
+        -webkit-transition: color 0.3s linear; /*safari and chrome */
+    }
+    .navlink a:hover{
+        color: black;
+    }
+    /* Hamburger Menu Hidden*/
+    .burger {
+        font-size: 2.2em;
+        display: none;
+    }
+    /* Hero Image on every page*/
+    .hero{
+        background-color:black;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
         width: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        flex-grow: 1;
+        position: relative;
+        top: 10vh;
+        margin-bottom: 10vh;  
+    }
+    .hero-image {
+        height: 100vh;
+        width: auto;  
     }
     .top{
-     height: auto;
-    }
-    .top-image{
-        height: auto;
+        background-color:white;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        height: 60vh;
         width: 100%;
+        background-position: center;
+        background-size:cover;
+        background-repeat: no-repeat;
+        flex-grow: 1;
+        position: relative;
+        top: 10vh;
+        margin-bottom: 10vh; 
+
     }
-    .navlink {
+    .top-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+    }
+    /* Generic section css */
+    section{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* Image of small shield */
+    .shield{
+        height: 50px;
+        width: 50px;
+        margin: 20px;
+    }
+    .textarea h1{
+        font-size: 22px;
+        color: #950a0a;
+        font-style: normal;
+    }
+    .textarea h1::after{
+        display: block;
+        content: '';
+        width: 100%;
+        border-bottom: 2px solid #950a0a;
+        margin-top: 10px;
+    }
+    .textarea p {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-left: 250px;
+        padding-right: 250px;
+        font-size: medium;
+    }
+    .textarea a{
+        text-decoration: none;
+        color: #950a0a;
+    }
+    /* Section of the Image links. Home Page */
+    .imgcontainer{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: #f3f3f3;
+        flex-direction: row;
+    }
+    .imgcontainer a{
+        position: relative;
+        flex-grow: 1;
+        height: 250px;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        overflow: hidden;
+    }
+    .imgcontainer span{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color:black;
+        opacity: 0.25;
+        transition: 0.3s all ease;
+    } 
+    .imgcontainer a img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        -o-object-fit: cover;
+        transition: 0.3s all ease; 
+    }
+    .imgcontainer p{
+        position:absolute;
+        font-size: 2.1rem;
+        color: white;
+    }
+    .imgcontainer a:hover span{
+    opacity: 0.5;
+    }
+    .imgcontainer a:hover img{
+    transform: scale(1.05);
+    }
+    /* Text area Home page */
+    .textarea{
+        background: #f3f3f3;
         text-align: center;
     }
-    .nav.active {
-        right: 0;
+    /* FOOTER */
+    .footerone{
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 0px;    
+        justify-content: space-between;
     }
-    .logo
-    {
+    .footertwo /*Electric Boogaloo*/{
+        width: 100%;
+        height: auto;
         margin: 0px;
-        height: 15vh;
     }
-    .logofooter{
-    order: 0;
-    flex-grow: 0;
-    
+    footer img{
+        height: 5vh;
     }
-    .socialicons{
-    order: 1;
+    /* Social media Icons in the footer */
+    .socialicons i{
+        padding: 10px;       
+        transition: color 0.3s linear; /* vendorless fallback */
+        -o-transition: color 0.3s linear; /* opera */
+        -ms-transition: color 0.3s linear; /* IE 10 */
+        -moz-transition: color 0.3s linear; /* Firefox */
+        -webkit-transition: color 0.3s linear; /*safari and chrome */
     }
     .footertext{
-    order: 2;
-    text-align: center;
-}
-    .textarea p{
-    padding-left: 20px;
-    padding-right: 20px;
+        text-align: center;
+        width: 100%;
     }
-    .mySlides img {
+    .footertext a{
+        text-decoration: none;
+        color: #950a0a;
+    }
+    .socialicons i:hover
+    {
+        color: black;
+        transition: 0.9s;
+    }
+    /*Gallery*/
+    .gallery{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        flex-direction: row;
+        align-items: stretch;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .gallery li{
+        flex: 1 1 20rem;
+        min-height: 30vh;
+        max-height: 50vh;
+    }
+    .gallery img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        padding: 2px;
+        cursor: pointer;
+    }
+    /* The Modal (background) */
+    .modal {
+        position: fixed;
+        padding-top: 100px;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #f3f3f3;
+
+        opacity: 0;
+        z-index: -1;
+        transition: 0.25s all ease;
+    }
+    
+    /* Modal Content */
+    .modal-content {
+        background-color: #fefefe;
+        width: 100%;
+    }
+
+    /* The Close Button */
+    .close {
+        color: black;
+        position: absolute;
+        right: 25px;
+        font-size: 35px;
+        font-weight: bold;
+    }
+    .close:hover,
+    .close:focus {
+        color: #999;
+        text-decoration: none;
+        cursor: pointer;
+    } 
+    /* Hide the slides by default */
+    .mySlides {
+        display: none;
+        text-align: center;
+    }
+    .mySlides img{
         max-width: 100%;
-        max-height: 80vh;
+        max-height: 70vh;
     }
     .mySlides p{
-        padding:0;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-left: 250px;
+        padding-right: 250px;
         font-size: large;
         color: #000;
     }
-}
-
-
-
-
-
-
-
-/* Keeps image sizes responsive .imgcontainer is index page*/
+    /* Next & previous buttons */
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: black;
+        font-weight: bold;
+        font-size: 20px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+    }
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    /* Number text (1/3 etc) */
+    .numbertext {
+        color: black;
+        font-size: large;
+        padding: 8px 12px;
+        text-align: center;
+        top: 0;
+    }
+    /* Caption text */
+    .caption-container {
+        text-align: center;
+        padding: 2px 16px;
+        color: black;
+    }
+    img.demo {
+        opacity: 0.6;
+    }
+    .active,
+    .demo:hover {
+        opacity: 1;
+    }
+    #recruitment{
+        height: 7vh;
+        margin: 20px;
+    }
+/* Contact Form */
+    input[type=text], input[type=email], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+    input[type=text]:focus, input[type=email]:focus, select:focus, textarea:focus{
+        border: 2px solid #950a0a;
+    }
+    input[type=submit] {
+        background-color: #000;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    input[type=submit]:hover {
+        background-color: #950a0a;
+    }
+    .contactform {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+/* Keeps image sizes responsive .imgcontainer is index page .myslides is gallery*/
 @media screen and (max-width: 239px){
     .logo
     {
@@ -574,6 +474,77 @@ footer img{
         height: 225px;
     }
 }
-
-
-
+/* This is so the hamburger menu shows up on smaller devices */
+@media screen and (max-width: 1260px) {
+    .header{
+        width: 100vw;
+        height: 15vh; 
+    }
+    .burger {
+        display: block;
+        padding-right: 30px;   
+    }
+    .nav {
+        margin: 0;
+        background: white;
+        position: fixed;
+        right: -100%;
+        top: 10vh;
+        width: 100%;
+        height: 80vh;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0;
+        transition: all 400ms;
+        font-weight: bold;
+        font-size: large;
+        z-index: 100000;
+    }
+    .hero-image{
+        height: auto;
+        width: 100%;
+    }
+    .top{
+        height: auto;
+    }
+    .top-image{
+        height: auto;
+        width: 100%;
+    }
+    .navlink {
+        text-align: center;
+    }
+    .nav.active {
+        right: 0;
+    }
+    .logo
+    {
+        margin: 0px;
+        height: 15vh;
+    }
+    .logofooter{
+        order: 0;
+        flex-grow: 0;
+    
+    }
+    .socialicons{
+        order: 1;
+    }
+    .footertext{
+        order: 2;
+        text-align: center;
+}
+    .textarea p{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .mySlides img {
+        max-width: 100%;
+        max-height: 80vh;
+    }
+    .mySlides p{
+        padding:0;
+        font-size: large;
+        color: #000;
+    }
+}
