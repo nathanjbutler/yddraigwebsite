@@ -288,7 +288,6 @@
     }
     .meetthegroup img{
         object-fit: cover;
-        
         height: 500px;
         width: 100%;
         padding: 2px;
@@ -296,8 +295,7 @@
     .meetthegroup h3{
         font-size: large;
         font-weight: bold;
-        color: #950a0a;
-        
+        color: #950a0a;      
     }
     .meetthegroup p{
       font-size: large;
@@ -478,7 +476,7 @@
 @media screen and (max-width: 540px) {
     .mySlides img {
         max-width: 100%;
-        max-height: 60vh;
+        max-height: 50vh;
     }
     .mySlides p {
         font-size: medium;
