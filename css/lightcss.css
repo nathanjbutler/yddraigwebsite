@@ -283,9 +283,11 @@
         flex: 1 1 30rem;
         padding: 2px;
         text-align: center;
+        
     }
     .meetthegroup img{
         object-fit: cover;
+        
         height: 70%;
         width: 100%;
         padding: 2px;
