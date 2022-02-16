@@ -134,6 +134,18 @@
         width: 50px;
         margin: 20px;
     }
+    .textarea h2{
+        font-size: 22px;
+        color: #950a0a;
+        font-style: normal;
+    }
+    .textarea h2::after{
+        display: block;
+        content: '';
+        width: 100%;
+        border-bottom: 2px solid #950a0a;
+        margin-top: 10px;
+    }
     .textarea h1{
         font-size: 22px;
         color: #950a0a;
@@ -274,10 +286,11 @@
     }
     .meetthegroup img{
         object-fit: cover;
+        height: 70%;
         width: 100%;
         padding: 2px;
     }
-    .meetthegroup h1{
+    .meetthegroup h3{
         font-size: large;
         font-weight: bold;
         color: #950a0a;
@@ -285,7 +298,7 @@
     }
     .meetthegroup p{
       font-size: large;
-      padding: 5px;
+      padding: 10px;
       /* border: #000 1px solid; */
     }
     /*Gallery*/
