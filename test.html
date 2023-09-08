@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Gallery</title>
+<link rel="icon" type="image/x-icon" href="img/yddraig shield.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A gallery showing images from various viking reenactment shows over the years.">
+
+<!-- CSS only -->
+<link href="css/lightcss.css" rel="stylesheet" id="theme-link">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="preload" as="style"/>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&family=Roboto&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/78512fb248.js" crossorigin="anonymous"></script>
+<body>
+
+<!-- Header -->
+<header class="header">
+    <a href="index.html" class="logo"><img src="img/newyddraiglogo.png" alt="Logo"></a>
+        <ul class="nav">
+            <li class="navlink"><a href="aboutus.html">About</a></li>
+            <li class="navlink"><a href="combat.html">Combat</a></li>
+            <li class="navlink"><a href="livinghistory.html">Living History</a></li>
+            <li class="navlink"><a href="gallery.html">Gallery</a></li>
+            <li class="navlink"><a href="contactus.html">Contact Us</a></li>
+        </ul>
+        <div class="burger">
+            <i class="fa fa-bars"></i>
+        </div>
+</header>
+
+<!-- Hero Image -->
+<section id="topimage" class="top"> 
+    <img src="img/Combat7.jpg" class="top-image" alt="Hero Image, a shield wall">
+</section>
+
+<!--Shield Image-->
+<section>
+    <img src="img/yddraig-shield.svg" class="shield" alt="group shield">
+</section>
+<section class="textarea">
+    <h1>Gallery</h1>
+    <br>
+</section>
+
+<!-- Gallery 
+<section class="gallery">
+        <li><img src="img/Headshot5.jpg" onclick="openModal();currentSlide(1)"></li>
+        <li><img src="img/wolcobb.jpg" onclick="openModal();currentSlide(2)"></li>
+        <li><img src="img/Headshot4.jpg" onclick="openModal();currentSlide(3)"></li>
+        <li><img src="img/Headshot7.jpg" onclick="openModal();currentSlide(4)"></li>
+        <li><img src="img/KenHorse3.jpg" onclick="openModal();currentSlide(5)"></li>
+        <li><img src="img/headshot14.jpg" onclick="openModal();currentSlide(6)"></li>
+        <li><img src="img/Headshot11.jpg" onclick="openModal();currentSlide(7)"></li>
+        <li><img src="img/photosbyabnulfar.jpg" onclick="openModal();currentSlide(8)"></li>
+        <li><img src="img/Headshot13.jpg" onclick="openModal();currentSlide(9)"></li>
+        <li><img src="img/headshotkarol.jpg" onclick="openModal();currentSlide(10)"></li>
+        <li><img src="img/ylvaragnarsdottir.jpg" onclick="openModal();currentSlide(11)"></li>
+        <li><img src="img/photobyabnbrammer.jpg" onclick="openModal();currentSlide(12)"></li>
+        <li><img src="img/SveinSkeggiMagnusson.jpg" onclick="openModal();currentSlide(13)"></li>
+        <li><img src="img/jorvikianforsythdan.jpg" onclick="openModal();currentSlide(14)"></li>
+        <li><img src="img/photobyabnstymir.jpg" onclick="openModal();currentSlide(15)"></li>
+        <li><img src="img/LHE8.jpg" onclick="openModal();currentSlide(16)"></li>
+        <li><img src="img/JorvikIanForsyth.jpg" onclick="openModal();currentSlide(17)"></li>
+        <li><img src="img/photobyabnvikefestbigbattle.jpg" onclick="openModal();currentSlide(18)"></li>
+        <li><img src="img/Training2.jpg" onclick="openModal();currentSlide(19)"></li>
+        <li><img src="img/LHE11.jpg" onclick="openModal();currentSlide(20)"></li>
+        <li><img src="img/LHE7.png" onclick="openModal();currentSlide(21)"></li>
+        <li><img src="img/LHE19YDdraig2016Hastingsgroupphoto.jpg" onclick="openModal();currentSlide(22)"></li>
+        <li><img src="img/LHE15.jpg" onclick="openModal();currentSlide(23)"></li>
+        <li><img src="img/shieldwallstaffstwo.jpg" onclick="openModal();currentSlide(24)"></li>
+        <li><img src="img/Headshot1filter.png" onclick="openModal();currentSlide(25)"></li>
+        <li><img src="img/Combat3.carham.JPG" onclick="openModal();currentSlide(26)"></li>
+        <li><img src="img/kenhorse.png" onclick="openModal();currentSlide(27)"></li>
+        <li><img src="img/danfightstafford.jpg" onclick="openModal();currentSlide(28)"></li>
+        <li><img src="img/Headshot2.png" onclick="openModal();currentSlide(29)"></li> 
+        <li><img src="img/LHE14.jpg" onclick="openModal();currentSlide(30)"></li>        
+        <li><img src="img/LHE18.jpg" onclick="openModal();currentSlide(31)"></li>
+        <li><img src="img/Headshot3.png" onclick="openModal();currentSlide(32)"></li> 
+        <li><img src="img/Training.jpg" onclick="openModal();currentSlide(33)"></li>
+        <li><img src="img/LHE20hastingsgroup.jpg" onclick="openModal();currentSlide(34)"></li>
+        <li><img src="img/Training4.jpg" onclick="openModal();currentSlide(35)"></li>
+        <li><img src="img/LHE5.jpg" onclick="openModal();currentSlide(36)"></li>
+        <li><img src="img/Wol.jpg" onclick="openModal();currentSlide(37)"></li>     
+        <li><img src="img/Training5.jpg" onclick="openModal();currentSlide(38)"></li>  
+        <li><img src="img/Headshot6.jpg" onclick="openModal();currentSlide(39)"></li> 
+        <li><img src="img/LHE10.png" onclick="openModal();currentSlide(40)"></li>  
+        <li><img src="img/Combat4Hastings.jpg" onclick="openModal();currentSlide(41)"></li>     
+        <li><img src="img/LHE12.jpg" onclick="openModal();currentSlide(42)"></li>     
+        <li><img src="img/groupstafford.jpg" onclick="openModal();currentSlide(43)"></li>     
+        <li><img src="img/groupstaffs.jpg" onclick="openModal();currentSlide(44)"></li>     
+      </section>
+      -->
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="img/Headshot5.jpg" >
+        <p>Jarl Yngvar Eriksson </p>
+
+        </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="img/wolcobb.jpg" >
+        <p>Brodir Ulfreksson<br>
+          Photo credit goes to <a href="https://www.cobbphoto.com/">Russell Cobb</a>
+        </p>
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="img/Headshot4.jpg" s>
+        <p>Elina Tomasdottir</p>
+      </div>
+
+  
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="img/Headshot7.jpg" >
+        <p>Sven the Short</p>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="img/KenHorse3.jpg" >
+        <p>Konal Ospakr Ulfrekson</p>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="img/headshot14.jpg" >
+        <p>Baggsy</p>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="img/Headshot11.jpg" >
+        <p>Hengist Svenson</p>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="img/photosbyabnulfar.jpg" >
+        <p>Ulfar Sveinson</p>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="img/Headshot13.jpg" >
+        <p> Sveinn Skovgaard</p>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="img/headshotkarol.jpg" >
+        <p>Ubbe Thorgilsson</p>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="img/ylvaragnarsdottir.jpg" >
+        <p>Ylva Ragnarrdottir</p>  
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="img/photobyabnbrammer.jpg" >
+        <p>Anund Ketilson</p>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="img/SveinSkeggiMagnusson.jpg" >
+        <p>Svein 'Skeggi' Magnusson</p>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="img/jorvikianforsythdan.jpg" >
+        <p>Halfdan Fjallson</p>
+      </div>
+
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="img/photobyabnstymir.jpg" >
+        <p>Styrmir</p>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="img/LHE8.jpg" >
+        <p>2019. Group Living History Photo. Abberley Hall School</p>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="img/JorvikIanForsyth.jpg" >
+        <p>Jorvik 2023</p>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="img/photobyabnvikefestbigbattle.jpg" >
+        <p>VikeFest main Battle<br> Photo credit PhotoByABN</p>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="img/Training2.jpg" >
+        <p>Training hall Clash</p>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="img/LHE11.jpg" >
+        <p>Living History Tents</p>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="img/LHE7.png" >
+        <p>Ulfar and Ylva looking to purchase sheep skins from Baggsy</p>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="img/LHE19YDdraig2016Hastingsgroupphoto.jpg" >
+        <p>2016. Battle of Hastings group photo</p>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="img/LHE15.jpg" >
+        <p>Elina teaching school children about Vikings</p>
+      </div>
+
+       <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="img/shieldwallstaffstwo.jpg" >
+        <p>Stafford Castle Shield Wall</p>
+      </div> 
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="img/Headshot1filter.png" >
+        <p>Sven the Short</p>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="img/Combat3.carham.JPG" >
+        <p>2018. Battle of Carham 1000 year anniversary battle</p>
+      </div>
+      
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="img/kenhorse.png" >
+        <p>Konal Ospakr Ulfrekson riding his horse</p>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="img/danfightstafford.jpg" >
+        <p>One on One combat at Stafford Castle</p>
+      </div> 
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="img/Headshot2.png" >
+        <p>Yngvar Eriksson</p>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="img/LHE14.jpg" >
+        <p>2016. Battle of Hastings group photo</p>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="img/LHE18.jpg" >
+        <p>Konal Ospakr Ulfrekson preparing for storytelling at Abberley Hall School</p>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="img/Headshot3.png" >
+        <p>Styrmir</p>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="img/Training.jpg" >
+        <p>Training Shield wall</p>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="img/LHE20hastingsgroup.jpg" >
+        <p>2019. Battle of Hastings group photo</p>
+      </div>
+      
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="img/Training4.jpg" >
+        <p>Practicing Shield Wall clashes</p>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="img/LHE5.jpg" >
+        <p>Living History cooking equipment</p>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="img/Wol.jpg" >
+        <p>Jarl Brodir Ulfreksson</p>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="img/Training5.jpg" >
+        <p>Training during Covid, sticking to regulations</p>
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="img/Headshot6.jpg" >
+        <p>Konal Ospakr Ulfrekson</p>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="img/LHE10.png" >
+        <p>Meat roasting on a spit</p>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="img/Combat4Hastings.jpg" >
+        <p>2019. Battle of Hastings Anglo Saxon Shield Wall against Norman horses</p>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="img/LHE12.jpg" >
+        <p>Living History set up</p>
+      </div>
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="img/groupstafford.jpg" >
+        <p>On the march</p>
+      </div>
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="img/groupstaffs.jpg" >
+        <p>Stafford Castle 2023</p>
+      </div>
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+</div>
+      </div>
+
+<!-- Recruitment Image -->
+      <section><a href="contactus.html"><img id = "recruitment" alt="Recruiting now image" src="img/recruitingnow.png"></a></section>
+
+<!-- Footer -->
+<footer class="footerone">
+    <img src="img/YDdraigLogo.svg" alt="Logo" class="logofooter">
+    <div class="socialicons">
+        <a href="https://www.facebook.com/Friends-of-Y-Ddraig-151543158238807"><i class="fa fa-facebook fa-2x"></i></a>
+        <a href="https://www.instagram.com/yddraigvikings/"><i class="fa fa-instagram fa-2x"></i></a>
+        <a href="https://twitter.com/YDdraigVikings"><i class="fa fa-twitter fa-2x"></i></a>
+    </div>
+</footer>
+<footer class="footertwo">
+<div class="footertext">
+    <h6 id="copyrighttext">Copyright &copy; 2023 Y Ddraig Stoke-on-Trent Viking re-enactment group</h6>
+    <p class="textfooter">Website Design by <a href="https://github.com/nathanjbutler">Nathan Butler</a></p>
+</div>
+</footer>
+
+    <script>
+        // Selection of HTML objects
+        const burger = document.querySelector('.burger i');
+        const nav = document.querySelector('.nav');
+
+        // Defining a function
+        function toggleNav() {
+            burger.classList.toggle('fa-bars');
+            burger.classList.toggle('fa-times');
+            nav.classList.toggle('active');
+        }
+
+        // Calling the function after click event occurs
+        burger.addEventListener('click', function() {
+            toggleNav();
+        });
+
+        // Open the Modal
+        function openModal() {
+          const modal = document.querySelector('#myModal');
+          modal.style.opacity = 1;
+          modal.style.zIndex=1;
+        }
+        
+        // Close the Modal
+        function closeModal() {
+          const modal = document.querySelector('#myModal');
+          modal.style.opacity = 0;
+          modal.style.zIndex = -1;
+        }
+        
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+    </script>
+</body>
+</html>
